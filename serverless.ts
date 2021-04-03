@@ -14,6 +14,7 @@ const serverlessConfiguration: AWS = {
   provider: {
     name: 'aws',
     runtime: 'nodejs14.x',
+    stage: "${opt:stage, 'dev'}", // This is a CLI Param that will be used to differentiate environments
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
