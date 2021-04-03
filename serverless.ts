@@ -20,8 +20,8 @@ const serverlessConfiguration: AWS = {
       apiKeys: ['md-sentiment-analysis-key']
     },
     environment: {
-      AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
-      // NODE_ENV: 'production'
+      AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
+      NODE_ENV: 'production'
     },
     lambdaHashingVersion: '20201221'
   },
