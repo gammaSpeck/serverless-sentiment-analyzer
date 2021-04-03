@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@configs": [
+        "src/configs/index.ts"
+      ],
+      "@functions/*": [
+        "src/functions/*"
+      ],
+      "@libs/*": [
+        "src/libs/*"
+      ],
+      "@errors/*": [
+        "src/errors/*"
+      ],
+      "@middlewares/*": [
+        "src/middlewares/*"
+      ],
+      "@validators/*": [
+        "src/validators/*"
+      ],
+    }
+  }
+}
