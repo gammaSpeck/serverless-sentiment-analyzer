@@ -1,20 +1,24 @@
-import winston from 'winston'
-import { configs } from '@configs'
+import winston, { format, transports } from 'winston'
+
+const logFormats = [
+  format.json(),
+  process.env.NODE_ENV !== 'production' ? format.colorize() : undefined
+].filter((x) => !!x)
 
 export const log = winston.createLogger({
   level: 'info',
-  format: winston.format.json(),
-  defaultMeta: { service: configs.serviceName },
+  format: format.combine(...logFormats),
+  // defaultMeta: { service: configs.serviceName }, // If you want the name to be in every log, use it
   transports: [
-    new winston.transports.Console({
-      format: winston.format.simple()
+    new transports.Console({
+      format: format.simple()
     })
     //
     // - Write all logs with level `error` and below to `error.log`
     // - Write all logs with level `info` and below to `combined.log`
     //
-    // new winston.transports.File({ filename: 'error.log', level: 'error' }),
-    // new winston.transports.File({ filename: 'combined.log' })
+    // new transports.File({ filename: 'error.log', level: 'error' }),
+    // new transports.File({ filename: 'combined.log' })
   ]
 })
 
@@ -24,8 +28,8 @@ export const log = winston.createLogger({
 //
 // if (process.env.NODE_ENV !== 'production') {
 //   log.add(
-//     new winston.transports.Console({
-//       format: winston.format.simple()
+//     new transports.Console({
+//       format: format.combine(format.simple(), format.colorize())
 //     })
 //   )
 // }
