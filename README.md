@@ -45,3 +45,11 @@ curl --location --request POST 'http://localhost:3000/dev/api/sentiment/analyze'
 
     > yarn deploy # Deploys the serverless app on API Gateway stage 'dev' by default
     > yarn deploy:prod # Deploys the serverless app on API Gateway stage 'prod' => Check package.json
+
+<hr>
+<br>
+
+## Future scope
+
+1. Write out Swagger.io API documentation using the OPEN API 3 Specification.
+2. Build out more features and expose more endpoints for the sentiment analyzer. (🤷‍♂️️)
