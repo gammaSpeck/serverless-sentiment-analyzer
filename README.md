@@ -12,6 +12,7 @@ It fulfills the following checkpoints for any Serverless Express App:
 - Modularity in code
 
 <hr>
+<br>
 
 ## Prerequisites
 
@@ -29,7 +30,7 @@ It fulfills the following checkpoints for any Serverless Express App:
 
 ## Test exposed endpoint
 
-```
+```shell
 curl --location --request POST 'http://localhost:3000/dev/api/sentiment/analyze' --header 'Content-Type: application/json' --header 'x-api-key: <YOUR_API_KEY>' --data-raw '{ "text":"I am happy" }'
 ```
 
