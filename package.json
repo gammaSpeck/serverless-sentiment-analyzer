@@ -1,7 +1,7 @@
 {
-  "name": "sls-sentiment-analyzer",
+  "name": "serverless-sentiment-analyzer",
   "version": "1.0.0",
-  "description": "sls-sentiment-analyzer",
+  "description": "md-sls-sentiment-analyzer",
   "main": "serverless.ts",
   "scripts": {
     "test": "jest",
