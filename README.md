@@ -1,6 +1,6 @@
 # Serverless Sentiment Analyzer
 
-This is a NodeJS serverless REST application written around the npm package of [sentiment](https://www.npmjs.com/package/sentiment) to perform sentiment analysis on a text input.
+This is a NodeJS serverless REST application written around the npm package of [sentiment](https://www.npmjs.com/package/sentiment) to perform **sentiment analysis** on a text input.
 It was built using the [Serverless framework](https://www.serverless.com/). The Cloud framework the deployment is for is AWS.
 
 It fulfills the following checkpoints for any Serverless Express App:
