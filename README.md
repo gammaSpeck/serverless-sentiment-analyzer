@@ -51,5 +51,5 @@ curl --location --request POST 'http://localhost:3000/dev/api/sentiment/analyze'
 
 ## Future scope
 
-1. Write out Swagger.io API documentation using the OPEN API 3 Specification.
+1. Write out a [Swagger.io](https://swagger.io) API documentation using the OPEN API 3 Specification.
 2. Build out more features and expose more endpoints for the sentiment analyzer. (🤷‍♂️️)
