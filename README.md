@@ -27,6 +27,7 @@ It fulfills the following checkpoints for any Serverless Express App:
 
     > yarn test # Runs the Jest test suits once
     > yarn test:watch # Runs Jest in watch mode => Use it during development
+    > yarn test:coverage # Runs Jest test coverage report => Aim to keep it above 95%
 
 ## Test exposed endpoint
 

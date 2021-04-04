@@ -18,7 +18,7 @@ app.use('/api', allRoutes)
 app.get('/healthcheck', async (_: Request, res: Response) => {
   SuccessResponse.send({
     res,
-    msg: '⚡⚡⚡ Hello ⚡⚡⚡ - MD Sentiment analyzer is healthy 💗 '
+    msg: '⚡⚡⚡ Hello ⚡⚡⚡ - MD Sentiment analyzer is healthy 💗'
   })
 })
 

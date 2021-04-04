@@ -6,8 +6,9 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "dev": "serverless offline start",
-    "deploy:dev": "serverless deploy",
+    "deploy": "serverless deploy",
     "deploy:prod": "serverless deploy --stage prod"
   },
   "engines": {
