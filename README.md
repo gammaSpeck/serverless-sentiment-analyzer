@@ -10,6 +10,7 @@ It fulfills the following checkpoints for any Serverless Express App:
 - Robust validation layer using [AJV](https://www.npmjs.com/package/ajv)
 - Integration test cases with the [Jest](https://jestjs.io/) framework
 - Modularity in code
+- Prettier configured to maintain a consistent coding style
 
 <hr>
 <br>
